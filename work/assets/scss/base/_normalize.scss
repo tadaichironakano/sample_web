@@ -6,9 +6,10 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
+  font-family: $FONT_FAMILY; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 14px;
 }
 
 /**
@@ -16,7 +17,11 @@ html {
  */
 
 body {
+  @include rem(font-size, 14px);
   margin: 0;
+  word-wrap: break-word;
+  color: #000;
+  line-height: 1.5;
 }
 
 /* HTML5 display definitions
@@ -92,6 +97,7 @@ template, /* 1 */
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: #000;
 }
 
 /**
@@ -151,7 +157,14 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0 0 0.67em;
+}
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin-top: 0;
 }
 
 /**
@@ -231,8 +244,11 @@ samp {
  * Add the correct margin in IE 8.
  */
 
+p{
+  margin-top: 0;
+}
 figure {
-  margin: 1em 40px;
+  margin: 0 40px 1em;
 }
 
 /**
