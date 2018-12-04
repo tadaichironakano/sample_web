@@ -1,3 +1,9 @@
 // base
-@import "../../assets/scss/base/_normalize"
-@import "../../assets/scss/settings/_variables"
+
+@import "../../assets/scss/settings/_variables";
+
+// tools
+@import "../../assets/scss/tools/functions/**";
+@import "../../assets/scss/tools/mixins/**";
+
+@import "../../assets/scss/base/_normalize";

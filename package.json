@@ -1,15 +1,25 @@
 {
   "name": "sample-site",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "gulp sass"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tadaichironakano/sample_web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tadaichironakano/sample_web/issues"
+  },
+  "homepage": "https://github.com/tadaichironakano/sample_web#readme",
+  "description": ""
 }

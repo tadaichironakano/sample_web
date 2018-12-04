@@ -1,0 +1,11 @@
+//setting screen
+@mixin max-screen($breakpoint){
+    @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
+@mixin print () {
+    @media print {
+        @content;
+    }
+}
